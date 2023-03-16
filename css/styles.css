@@ -396,16 +396,14 @@ address {
   border-radius: 4px;
   padding: 16px 32px;
   display: block;
-  fill: var(--hover-color);
+  fill: var(--border);
 }
 .customers-item:hover,
 .customers-item:focus {
   fill: var(--hover-color);
   border: 1px solid var(--hover-color);
 }
-.customers-icon:hover {
-  fill: red;
-}
+
 /* footer */
 
 .basement {
