@@ -13,6 +13,7 @@
   --buttons-2page: #e7e9fc;
   --primary-text-color: #434455;
   --border: #8e8f99;
+  --hover-footer: #31d0aa;
 }
 
 p,
@@ -168,6 +169,8 @@ address {
 .active-btn:active {
   color: var(--hero-title-buttons);
   background-color: var(--hover-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* specifics */
@@ -328,6 +331,10 @@ address {
 }
 /* second page */
 
+.portfolio-link:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .second-nav {
   font-family: "Roboto", sans-serif;
   color: var(--accent-color);
@@ -427,8 +434,46 @@ address {
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
+.basement-container {
+  margin-right: 120px;
+}
 .basement-second-logo {
   color: var(--cloud);
+}
+.footer-container {
+  display: flex;
+}
+.footer-logo-group {
+  display: block;
+  width: 208px;
+  height: 80px;
+}
+.footer-social-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--background);
+  margin-bottom: 16px;
+}
+.footer-logo-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-box:hover,
+.footer-social-box:focus {
+  background-color: var(--hover-footer);
+  padding: 8px;
 }
 
 .visually-hidden {
